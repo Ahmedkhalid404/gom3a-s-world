@@ -1,0 +1,24 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container{
+    margin-top: 50px;
+  }
+  
+  footer {
+    margin-top: 50px; 
+  }
+  
+  .typing::after {
+    content: "|";
+    animation: blink 1s step-end infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }

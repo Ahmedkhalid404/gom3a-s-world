@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./game/style.css">
+    <link href="./nav/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu">
+            <a href="./index.html" class="menu-item">Vs</a>
+            <a href="./mk.html" class="menu-item">Mk Contest</a>
+            <a href="./game.html" class="menu-item active">Game</a>
+            <a href="./welcome.html" class="menu-item">!?</a>
+            <div class="hover-highlight"></div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="mb-3">
+            <input type="text" id="handle" class="form-control" placeholder="Enter your Codeforces handle">
+        </div>
+        <div class="mb-3">
+            <select id="problem-filter" class="form-select">
+                <option value="solved">From my solved problems</option>
+                <option value="unsolved">From my unsolved problems</option>
+            </select>
+        </div>
+        <button id="fetch-problem-btn" class="btn btn-primary">Get Problem</button>
+        <div id="result" class="text-start d-none"></div>
+        <div id="problem-statement" class="text-start d-none">Problem statement will appear here...</div>
+        <div class="mb-3 d-none" id="rating-section">
+            <input type="number" id="rating-guess" class="form-control" placeholder="Enter your rating guess" style="margin-top: 10px;">
+            <button id="submit-rating-btn" class="btn btn-success mt-2" style="margin-top: 50px;">Submit Rating</button>
+        </div>
+        
+    </div>
+    <script src="./game/script.js"></script>
+    <script src="./nav/script.js"></script>
+</body>
+</html>

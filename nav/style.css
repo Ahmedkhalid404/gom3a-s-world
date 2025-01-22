@@ -1,0 +1,48 @@
+.navbar {
+    background-color: #2f3640; 
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.menu {
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-item {
+    position: relative;
+    color: #dcdde1; 
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: color 0.3s;
+    z-index: 1;
+}
+
+.menu-item.active {
+    color: #ffffff;
+}
+
+.menu-item:hover {
+    color: #ffffff;
+}
+
+.hover-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%; 
+    width: 0; 
+    background-color: #44bd32;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    z-index: 0;
+}

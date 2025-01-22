@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./welcome/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./nav/style.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <div class="navbar">
+        <div class="menu">
+            <a href="./index.html" class="menu-item">Vs</a>
+            <a href="./mk.html" class="menu-item">Mk Contest</a>
+            <a href="./game.html" class="menu-item">Game</a>
+            <a href="./welcome.html" class="menu-item active">!?</a>
+            <div class="hover-highlight"></div>
+        </div>
+    </div>
+
+<header class="text-center py-8 container">
+    <h1 class="text-4xl font-bold">Welcome to My Website</h1>
+    <p id="typingText" class="text-lg mt-4 typing inline-block"></p>
+  </header>
+
+  <section class="max-w-4xl mx-auto my-12">
+    <h2 class="text-2xl font-semibold mb-6" style="width: 1000px;">Pages Description</h2>
+    <div class="space-y-4">
+      <details class="bg-white shadow rounded p-6">
+        <summary class="cursor-pointer font-medium text-lg">Vs Page</summary>
+        <p class="mt-2 text-gray-600">In this page, you enter two handles and it gives you some data for each one. Then, it shows you all the problems solved by the first handle, categorized by rating. You can check for each problem whether the second person has solved it or not by a mark next to each problem. You can also get a random problem from the first person's solved problems with a specific rating, and ensure that the second person has not solved it.</p>
+      </details>
+      <details class="bg-white shadow rounded p-6">
+        <summary class="cursor-pointer font-medium text-lg">Make contest (MK contest) Page</summary>
+        <p class="mt-2 text-gray-600">In this page, you can enter any number of handles you like, separated by spaces, commas, or line breaks, and then specify the number of problems you want (range from 1 to 100). You will receive problems from each rating range between 800 and 3500.
+
+            You’ll get problems in each rating with the number you specified, and all the handles will not have solved them.</p>
+      </details>
+      <details class="bg-white shadow rounded p-6">
+        <summary class="cursor-pointer font-medium text-lg">Game Page</summary>
+        <p class="mt-2 text-gray-600">In this page, it's just a game I enjoy playing with myself, and I wanted to share it with you. I try to guess the rating of a problem, so I’ll give you a random problem (and you’ll determine whether it’s one of the problems you’ve solved or not). You read it and try to guess its rating.
+
+            I tried to let you choose whether you want the problem's statement or to get a random accepted code for the problem so you can try to guess its rating from the code, but I couldn't find a way to access the Codeforces API to get the code. :))</p>
+      </details>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>Made with ❤️ by Ahmed Khaled Gomaa &copy; <span id="currentYear"></span> </p>
+    <pre>  Special thanks to my friend Ahmed Nasr &lt;3 </pre>
+    <div class="mt-4">
+      <a href="https://github.com/Ahmedkhalid404" class="text-blue-400 hover:underline">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/ahmed-khaled-01ba9b222/" class="text-blue-400 hover:underline">LinkedIn</a> | 
+      <a href="https://codeforces.com/profile/gom3a_" class="text-blue-400 hover:underline">Codeforces</a> | 
+      <a href="https://youtu.be/TSDfw_27Wqw?t=2" class="text-blue-400 hover:underline">صلي ع الحبيب قلبك يطيب</a> | 
+      <a href="https://www.youtube.com/playlist?list=PLukAHj56HNKY5P7048h0UYJCtbpOV37qc" class="text-blue-400 hover:underline"> take a look :)) </a>
+    </div>
+    
+  </footer>
+
+  <script src="./welcome/script.js"></script>
+  <script src="./nav/script.js"></script>
+</body>
+</html>
