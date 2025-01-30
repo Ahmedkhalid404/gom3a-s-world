@@ -26,3 +26,26 @@ function typeEffect() {
 
 typeEffect();
 document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+
+let myRandomLink = document.getElementById("myRandomLink");
+
+
+const random = (mn, mx) => {
+    return Math.floor(Math.random() * (mx - mn)) + mn;
+}
+
+function randomizeLink(){
+    event.preventDefault();
+    
+    let links = [
+        "https://www.youtube.com/watch?v=AOHx8JLdf1E",
+        "https://www.youtube.com/watch?v=Zz-HelZtKEQ",
+        "https://www.youtube.com/watch?v=BfwSLOHlPrw&t=1s",
+        "https://www.youtube.com/watch?v=FZSlX_pwvf0"
+    ];
+    
+    window.open(links[ random(0, links.length - 1) ], "_blank");
+}
+
+myRandomLink.onclick = randomizeLink;
